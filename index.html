@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
 <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-  <script src="https://raw.githack.com/AR-js-org/AR.js/3.4.0/aframe/build/aframe-ar-nft.js"></script>
-   <script src="https://rawgit.com/rdub80/aframe-gui/master/dist/aframe-gui.min.js"></script>
-   <script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
-
+<script src="https://raw.githack.com/AR-js-org/AR.js/3.4.0/aframe/build/aframe-ar-nft.js"></script>
+<script src="https://rawgit.com/rdub80/aframe-gui/master/dist/aframe-gui.min.js"></script>
+<script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
+   <link rel="stylesheet" href="stylesheet.css">
     <script>
         function alertfunct() {
             alert ("example function");
@@ -20,14 +21,15 @@
 
 
 
-
+</head>
 
 
 <body style="margin: 0px; overflow: hidden;">
-    <div>
-        <h1>Hello World</h1>
-    </div>
-
+    <div class="container">
+        <div id="toptext">
+            <h1>Hello World</h1>
+        </div>
+    <div id="cameraAR">
     <a-scene arjs='detectionMode:mono_and_matrix; matrixCodeType: 3x3_PARITY65;' vr-mode-ui="enabled:false;" embedded>
         
         <a-entity id="cameraRig" position="0 1.6 5">
@@ -83,5 +85,7 @@
         </a-marker> 
        
     </a-scene>
+    </div>
+</div>
 </body>
 </html>
