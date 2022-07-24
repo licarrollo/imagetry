@@ -1,9 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+<script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
   <script src="https://raw.githack.com/AR-js-org/AR.js/3.4.0/aframe/build/aframe-ar-nft.js"></script>
    <script src="https://rawgit.com/rdub80/aframe-gui/master/dist/aframe-gui.min.js"></script>
    <script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
+
+    <script>
+        function alertfunct() {
+            alert ("example function");
+
+        }
+
+
+        function textfield() {
+            let textbox = document.querySelector("#input");
+            textbox.components["a-gui-input"].appendtext("example"); }
+
+    </script>
+
+
+
+
+
+
 <body style="margin: 0px; overflow: hidden;">
     <a-scene arjs='detectionMode:mono_and_matrix; matrixCodeType: 3x3_PARITY65;' vr-mode-ui="enabled:false;" embedded>
         
@@ -13,6 +32,8 @@
              raycaster="objects: [gui-interactable]"
              fuse="true" fuse-timeout="2000"
              color="#ECEFF1"
+             width="3"
+             height="3"
              hover-color="#CFD8DC"
              active-color="#607D8B"
              design="ring" >
@@ -20,12 +41,20 @@
             </a-gui-cursor>
         </a-camera>
     </a-entity>
- <a-gui-flex-container panel-color="#ffffff" align-items="middle" flex-direction="row" width=5 height=5 opacity=0.5 position="0 1.5 -3"> 
+ <a-gui-flex-container panel-color="#ffffff" align-items="middle" flex-direction="column" width=3 height=3 opacity=0.5 position="0 1.5 -3"> 
+    <a-gui-flex-container flex-direction="row">
     <a-gui-button value="A" onclick="alert('hello');"></a-gui-button>
-    <a-gui-button value="B"></a-gui-button>
-    <a-gui-button value="C"></a-gui-button>
-</a-gui-flex-container> 
+    <a-gui-button value="B" onclick="alertfunct"></a-gui-button>
+    <a-gui-button value="C" onclick="textfield"></a-gui-button>
+        </a-gui-flex-container> 
 
+       
+    
+<a-gui-flex-container flex-direction="row">
+    <a-gui-label value="text label"></a-gui-label>
+    <a-gui-input id="input" width=2 value="1"></a-gui-input>
+</a-gui-flex-container>
+</a-gui-flex-container>
         <!-- <a-marker type="barcode" value="5">
             <a-box color="#ffff00" material="opacity:0.5" position="0 0.5 0"
             animation__turn="property:rotation; from:0 0 0; to:0 360 0;startEvents: mouseenter; dur: 500";>
