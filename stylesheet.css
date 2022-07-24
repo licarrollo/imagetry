@@ -11,7 +11,7 @@ h1{
     color: white;
 }
 .container{
-    margin-top:34%;
+    margin-top:12%;
   
 }
 #toptext{
@@ -26,7 +26,7 @@ h1{
     border: 2px solid red;
     border-radius: 5px;
     padding: 5px;
-    height: 520px;
+    height: 70vh;
     width: 580px;
    margin: 0 auto 0 auto;
 }
