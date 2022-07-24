@@ -26,18 +26,16 @@
 <body style="margin: 0px; overflow: hidden;">
     <a-scene arjs='detectionMode:mono_and_matrix; matrixCodeType: 3x3_PARITY65;' vr-mode-ui="enabled:false;" embedded>
         
-        <a-entity id="cameraRig" position="0 1.6 0">
+        <a-entity id="cameraRig" position="0 1.6 5">
         <a-camera look-controls wasd-controls position="0 0 0">
-            <a-gui-cursor id="cursor"
+           <a-gui-cursor id="cursor"
              raycaster="objects: [gui-interactable]"
              fuse="true" fuse-timeout="2000"
              color="#ECEFF1"
-             width="3"
-             height="3"
              hover-color="#CFD8DC"
              active-color="#607D8B"
-             design="ring" >
-            
+             design="ring" 
+             distance= "-3">
             </a-gui-cursor>
         </a-camera>
     </a-entity>
