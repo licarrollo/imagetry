@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    
 }
 
 body{
@@ -11,7 +11,7 @@ h1{
     color: white;
 }
 .container{
-    margin-top:12%;
+    margin-top:13.7%;
   
 }
 #toptext{
@@ -19,14 +19,14 @@ h1{
     border: 2px solid red;
     border-radius: 5px;
     padding: 5px;
-    height: 100px;
+    height: 80px;
     width: 100vw;
 }
 #cameraAR{
     border: 2px solid red;
     border-radius: 5px;
     padding: 5px;
-    height: 70vh;
+    height: 50vh;
     width: 580px;
    margin: 0 auto 0 auto;
 }

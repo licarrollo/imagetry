@@ -45,7 +45,7 @@
             </a-gui-cursor>
         </a-camera>
     </a-entity>
- <a-gui-flex-container panel-color="#ffffff" align-items="middle" flex-direction="column" width=3 height=3 opacity=0.5 position="0 1.5 -3"> 
+<a-gui-flex-container panel-color="#ffffff" align-items="middle" flex-direction="column" width=3 height=3 opacity=0.5 position="0 1.5 -3"> 
     <a-gui-flex-container flex-direction="row">
     <a-gui-button value="A" onclick="alert('hello');"></a-gui-button>
     <a-gui-button value="B" onclick="alertfunct"></a-gui-button>
@@ -54,42 +54,39 @@
 
        
     
-<a-gui-flex-container flex-direction="row">
-    <a-gui-label value="text label"></a-gui-label>
-    <a-gui-input id="input" width=2 value="1"></a-gui-input>
+
 </a-gui-flex-container>
-</a-gui-flex-container>
-        <!-- <a-marker type="barcode" value="5">
+        <a-marker type="barcode" value="5">
             <a-box color="#ffff00" material="opacity:0.5" position="0 0.5 0"
             animation__turn="property:rotation; from:0 0 0; to:0 360 0;startEvents: mouseenter; dur: 500";>
         
         </a-box>
-         </a-marker>  -->
+         </a-marker> 
 
          
-        <!-- <a-marker type="barcode" value="3">
+         <a-marker type="barcode" value="3">
             <a-box color="tomato" material="opacity:2" position="0 0.5 0"
             a-animation attribute="rotation"
             from="0 0 0"
             to="0 360 0"
             Startevents:mouseenter;></a-box>
         </a-animation>  
-         </a-marker>  -->
+         </a-marker> 
          
 
 
          <a-marker preset="hiro">
-            <a-box position="0 0.5 0" rotation="0 45 0" color="#4CC3D9; rotation: 0 45 45;"
+            <a-box position="0 0 0" rotation="0 45 0" color="#4CC3D9; rotation: 0 45 45;"
             event-set__enter="_event: mouseenter; color: #8FF7FF; rotation: 0 0 0;"
-            event-set__leave="_event: mouseleave; color: #4CC3D9; rotation:45 0 45 "></a-box>
-        </a-marker> 
+            event-set__leave="_event: mouseleave; color: #4CC3D9; rotation:45 0 45 ">
+        </a-box>
+         </a-marker>
        
     </a-scene>
     </div>
 </div>
 </div>
-<div id="informationtext">
-    <h1 id="text2">Information</h1>
+
 </div>
 </body>
 </html>
